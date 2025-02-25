@@ -47,7 +47,7 @@ async def get_metadata_json(layer: str,request:Request):
     hostname = request.headers.get('host')
     metadata = await get_metadata(layers[layer].connection)
     layer_path = "{z}/{x}/{y}"
-    metadata['tiles'] = f"http://{hostname}/{layer}/{layer_path}.{layers[layer].format}"
+    metadata['tiles'] = [f"http://{hostname}/{layer}/{layer_path}.{layers[layer].format}"]
 
     return metadata
 
