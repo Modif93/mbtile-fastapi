@@ -1,0 +1,2 @@
+class LayerDirectoryNotFound(Exception):
+    pass

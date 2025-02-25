@@ -1,3 +1,5 @@
-fastapi~=0.110.0
-python-multipart~=0.0.9
-dbutils~=3.1.0
+aiofiles==24.1.0
+aiosqlite==0.21.0
+fastapi==0.115.8
+pydantic-settings==2.8.0
+uvicorn==0.34.0
